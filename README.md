@@ -1,5 +1,71 @@
-# Vue 3 + Vite
+# 医药通 - 药品展示平台
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+一个基于Vue 3的药品展示平台，支持药品分类查询、详情查看和后台管理功能。
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## 项目特点
+
+- **前台功能**：首页展示、药品分类、药品搜索、药品列表、药品详情
+- **后台功能**：管理员登录、药品管理、分类管理、数据统计
+- **技术栈**：Vue 3 + Vite + Element Plus + Pinia + Vue Router
+- **响应式设计**：适配手机、平板、电脑等不同设备
+
+## 快速开始
+
+### 安装依赖
+
+```bash
+npm install
+```
+
+### 开发模式
+
+```bash
+npm run dev
+```
+
+### 构建生产版本
+
+```bash
+npm run build
+```
+
+## 项目结构
+
+```
+src/
+├── assets/           # 静态资源
+├── components/       # 公共组件
+├── views/            # 页面组件
+├── router/           # 路由配置
+├── store/            # Pinia状态管理
+├── api/              # 接口请求
+├── utils/            # 工具函数
+└── App.vue           # 根组件
+```
+
+## 管理员登录
+
+- **地址**：`/admin/login`
+- **用户名**：admin
+- **密码**：123456
+
+## 功能模块
+
+### 前台模块
+- **首页**：轮播图、药品分类导航、热门药品
+- **药品列表**：分类筛选、价格区间筛选、排序
+- **药品详情**：药品信息、功效主治、用法用量、禁忌、注意事项
+- **关于我们**：平台介绍、联系方式
+
+### 后台模块
+- **药品管理**：新增、编辑、删除药品
+- **分类管理**：添加、修改分类
+- **数据统计**：药品总数、分类数量
+
+## 技术特点
+
+- 使用Vue 3 Composition API
+- 集成Element Plus UI组件库
+- 使用Pinia进行状态管理
+- 响应式设计，适配不同设备
+- 模块化代码结构，易于维护
